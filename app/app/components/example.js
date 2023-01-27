@@ -8,7 +8,7 @@ export default class extends Component {
 
   @tracked message = 'hello';
 
-  @action toggle() { 
+  @action toggle() {
     if (this.message === 'hello') {
       this.message = 'goodbye';
     } else {

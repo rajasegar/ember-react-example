@@ -20,12 +20,17 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "npm-run-all lint test:*",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "analyze": "webpack-bundle-analyzer concat-stats-for/my-stats.json"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.18.6",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.7.0",
+    "@embroider/compat": "^2.1.1",
+    "@embroider/core": "^2.1.1",
+    "@embroider/router": "^2.0.0",
+    "@embroider/webpack": "^2.1.1",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "babel-eslint": "^10.1.0",
@@ -65,7 +70,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "some-react-lib": "workspace:^1.0.0",
-    "webpack": "^5.72.1"
+    "webpack": "^5.72.1",
+    "webpack-bundle-analyzer": "^4.7.0"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
